@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 public class StringOperation implements ArithmeticOperation<String> {
     public String calculate(String a, String b) {

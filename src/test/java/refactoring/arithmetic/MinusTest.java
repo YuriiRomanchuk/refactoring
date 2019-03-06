@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

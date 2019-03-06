@@ -1,6 +1,6 @@
 package refactoring;
 
-import refactoring.Arithmetic.*;
+import refactoring.arithmetic.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,16 +10,13 @@ public class AccessPoint {
 
     private View view;
 
-    private int a = 6;
-    private int b = 4;
-
     public AccessPoint(View view) {
         this.view = view;
     }
 
     public void startProgram() {
 
-        List<Consumer<View>> operations = receiveOperations();
+        List<Consumer<View>> operations = receiveOperations(view.receiveVariable("a"), view.receiveVariable("b"));
 
         for (Consumer<View> operation : operations) {
             operation.accept(view);
@@ -27,7 +24,7 @@ public class AccessPoint {
     }
 
 
-    private List<Consumer<View>> receiveOperations() {
+    private List<Consumer<View>> receiveOperations(int a, int b) {
 
         List<Consumer<View>> operations = new ArrayList<>();
 

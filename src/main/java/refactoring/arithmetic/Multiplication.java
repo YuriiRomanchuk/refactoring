@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 public class Multiplication implements ArithmeticOperation<Integer> {
     public Integer calculate(Integer a, Integer b) {

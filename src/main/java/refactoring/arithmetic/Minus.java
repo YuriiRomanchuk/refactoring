@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 public class Minus implements ArithmeticOperation<Integer> {
     public Integer calculate(Integer a, Integer b) {

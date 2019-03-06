@@ -19,6 +19,15 @@ public class View {
         System.out.println(message);
     }
 
+    public int receiveVariable(String variableName) {
 
+        System.out.print(String.format("Enter %s: ", variableName));
+
+        while (!in.hasNextInt()) {
+            printMessage(String.format("Wrong input! Repeat input %s", variableName));
+            in.next();
+        }
+        return in.nextInt();
+    }
 
 }

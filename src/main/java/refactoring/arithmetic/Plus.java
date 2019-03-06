@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 public class Plus implements ArithmeticOperation<Integer> {
 

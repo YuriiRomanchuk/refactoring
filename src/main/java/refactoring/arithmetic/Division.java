@@ -1,4 +1,4 @@
-package refactoring.Arithmetic;
+package refactoring.arithmetic;
 
 public class Division implements ArithmeticOperation<Integer> {
 
